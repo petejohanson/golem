@@ -1,0 +1,23 @@
+{
+  "name": "golem",
+  "version": "0.1.0",
+  "description": "Go game written in Elm",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "pretest": "pushd tests; elm-install; popd",
+    "test": "elm-test --report junit > tests/elm-test-report.xml"
+  },
+  "keywords": [
+    "go",
+    "elm"
+  ],
+  "author": "Pete Johanson <peter@peterjohanson.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "elm-github-install": "^0.3.0",
+    "elm-test": "github:petejohanson/node-test-runner#ftr_junit_reporter"
+  }
+}
